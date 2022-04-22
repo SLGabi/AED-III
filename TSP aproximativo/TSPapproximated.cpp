@@ -98,8 +98,8 @@ int main()
 
     //Somando o custo total final
     int sumpath = 0;
-    for(int i =0; i < final_path.size(); i++){
-        sumpath += graph[final_path[i]][final_path[i+1]];
+    for(int i =1; i < final_path.size(); i++){
+        sumpath += graph[final_path[i-1]][final_path[i]];
     }
 
     //Imprimindo as infos
